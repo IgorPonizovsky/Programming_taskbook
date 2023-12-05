@@ -8,17 +8,11 @@ use std::io;
 fn main() { 
     // Получение значений длинн рёбер прямоугольного параллелепипеда от пользователя 
     println!("Введите ребро a: ");
-    let mut a = String::new(); 
-    io::stdin().read_line(&mut a)
-        .expect("Не удалось прочитать строку"); 
+    let a = read_user_line(); 
     println!("Введите ребро b: ");
-    let mut b = String::new(); 
-    io::stdin().read_line(&mut b)
-        .expect("Не удалось прочитать строку"); 
+    let b = read_user_line(); 
     println!("Введите ребро c: ");
-    let mut c = String::new(); 
-    io::stdin().read_line(&mut c)
-        .expect("Не удалось прочитать строку"); 
+    let c = read_user_line(); 
 
     // Преобразование полученных данных из строк в числа 
     let a: f32 = str_to_num(a); 
@@ -28,6 +22,14 @@ fn main() {
     // Вывод искомых величин на экран 
     println!("Объём V={}", a*b*c); 
     println!("Площадь поверхности S={}", 2.0*(a*b+b*c+a*c)); 
+}
+
+// Функция получения строки от пользователя 
+fn read_user_line() -> String { 
+    let mut x = String::new(); 
+    io::stdin().read_line(&mut x)
+        .expect("Не удалось прочитать строку"); 
+    return x; 
 }
 
 // Функция перевода из строки в число 
