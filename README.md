@@ -3,9 +3,17 @@
 [М.Э.Абрамян - Электронный задачник по программированию(2005)][1] 
 
 The repository was created to help me learn the Rust language. Rust compiler is used to build the program:
+
+Building: 
 ```
     rustc filename.rs 
+```
+Running: 
+```
     ./filename 
+```
+Deleting: 
+```
     rm filename 
 ```
 Each solution file contains the text of the problem. 
