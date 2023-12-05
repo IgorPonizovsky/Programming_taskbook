@@ -19,10 +19,11 @@ fn main() {
     let a: f32 = str_to_num(a);
     let b: f32 = str_to_num(b);
 
-    // Выведение искомого значения на экран 
+    // Вывод искомого значения на экран 
     println!("Среднее арифметическое равно {}", (a+b)/2.0); 
 } 
 
+// Функция приведения строки в число 
 fn str_to_num(x: String) -> f32 { 
     let x: f32 = match x.trim().parse() { 
         Ok(num) => num, 
