@@ -30,6 +30,7 @@ fn main() {
     println!("Площадь поверхности S={}", 2.0*(a*b+b*c+a*c)); 
 }
 
+// Функция перевода из строки в число 
 fn str_to_num(x: String) -> f32 { 
     let x: f32 = match x.trim().parse() { 
         Ok(num) => num, 
