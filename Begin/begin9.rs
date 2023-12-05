@@ -8,13 +8,9 @@ use std::io;
 fn main() { 
     // Получение чисел от пользователя 
     println!("Введите число a: "); 
-    let mut a = String::new(); 
-    io::stdin().read_line(&mut a)
-        .expect("Не удалось прочитать строку"); 
+    let a = read_user_line(); 
     println!("Введите число b: "); 
-    let mut b = String::new(); 
-    io::stdin().read_line(&mut b)
-        .expect("Не удалось прочитать строку"); 
+    let b = read_user_line(); 
 
     // Приведение полученных данных из строк в числа 
     let a: f32 = str_to_num(a); 
@@ -23,6 +19,14 @@ fn main() {
     // Вывод искомого значения 
     println!("Среднее геометрическое равно {}", (a*b).sqrt()); 
 }
+
+// Функция получения строки от пользователя 
+fn read_user_line() -> String { 
+    let mut x = String::new(); 
+    io::stdin().read_line(&mut x)
+        .expect("Не удалось прочитать строку"); 
+    return x; 
+} 
 
 // Функция перевода из строки в число 
 fn str_to_num(x: String) -> f32 { 
