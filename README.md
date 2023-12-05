@@ -5,9 +5,7 @@
 The repository was created to help me learn the Rust language. Rust compiler is used to build the program:
 ```
     rustc filename.rs 
-
     ./filename 
-
     rm filename 
 ```
 Each solution file contains the text of the problem. 
