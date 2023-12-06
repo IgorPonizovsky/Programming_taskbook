@@ -17,7 +17,10 @@ fn main() {
         .expect("Введите числовое значение"); 
     
     // Расчёт и вывод искомых значений 
-    println!("A^2={}", a.powf(2.0)); 
-    println!("A^4={}", a.powf(4.0)); 
-    println!("A^8={}", a.powf(8.0)); 
+    let x: f32 = a*a; 
+    println!("A^2={}", x); 
+    let x: f32 = x*x; 
+    println!("A^4={}", x); 
+    let x: f32 = x*x; 
+    println!("A^8={}", x); 
 } 
