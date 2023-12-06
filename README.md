@@ -22,7 +22,7 @@ Each solution file contains the text of the problem.
 
 01. [Begin](./Begin) - Ввод и вывод данных, оператор присваивания; 
 
-02. 
+02. [Integer](./Integer) - Целые числа 
 
 03. 
 
