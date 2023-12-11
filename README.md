@@ -24,7 +24,7 @@ Each solution file contains the text of the problem.
 
 02. [Integer](./Integer) - Целые числа 
 
-03. 
+03. [Boolean](./Boolean) - Логические выражения 
 
 04. 
 
