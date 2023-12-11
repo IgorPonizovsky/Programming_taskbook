@@ -34,6 +34,6 @@ fn read_user_line() -> String {
 // Функция приведения строки в число 
 fn string_to_number(some_string: String) -> i32 { 
     let number: i32 = some_string.trim().parse()
-        .expect("Введите положительное целое число"); 
+        .expect("Введите целое число"); 
     number 
 } 
