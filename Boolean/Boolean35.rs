@@ -1,0 +1,46 @@
+// Пн 11 дек 2023 21:26:30 MSK
+// Даны координаты двух различных полей шахматной доски x1, y1, x2, y2(целые числа, лежащие в диапазоне 1-8). 
+// Проверить истинность высказывания: "Данные поля имеют одинаковый цвет". 
+
+use std::io; 
+
+fn main() { 
+    // Получение координат x1, y1, x2, y2 от пользователя: 
+    println!("Введите координату x1(1..8): "); 
+    let x1 = read_user_line(); 
+    println!("Введите координату y1(1..8): "); 
+    let y1 = read_user_line(); 
+    println!("Введите координату x2(1..8): "); 
+    let x2 = read_user_line(); 
+    println!("Введите координату y2(1..8): "); 
+    let y2 = read_user_line(); 
+
+    // Приведение полученных данных из строки в число: 
+    let x1: i32 = string_to_number(x1); 
+    let y1: i32 = string_to_number(y1); 
+    let x2: i32 = string_to_number(x2); 
+    let y2: i32 = string_to_number(y2); 
+
+    // Вывод искомого значения: 
+    if (x1 % 2 == y1 % 2) | 
+       (x2 % 2 == y2 % 2) { 
+        println!("Данные поля имеют одинаковый цвет"); 
+    } else { 
+        println!("Данные поля имеют не одинаковый цвет"); 
+    }; 
+} 
+
+// Функция получения строки из стандартного ввода-вывода 
+fn read_user_line() -> String { 
+    let mut some_string = String::new(); 
+    io::stdin().read_line(&mut some_string)
+        .expect("Не удалость прочитать строку"); 
+    some_string 
+} 
+
+// Функция приведения строки в число 
+fn string_to_number(some_string: String) -> i32 { 
+    let number: i32 = some_string.trim().parse()
+        .expect("Введите числовые координаты"); 
+    number 
+} 
