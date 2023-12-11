@@ -11,7 +11,7 @@ fn main() {
     println!("Введите координату y: "); 
     let y = read_user_line(); 
 
-    // Приведение полученных данных из строки в чило: 
+    // Приведение полученных данных из строки в число: 
     let x: i32 = string_to_number(x); 
     let y: i32 = string_to_number(y); 
 
