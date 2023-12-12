@@ -26,7 +26,7 @@ Each solution file contains the text of the problem.
 
 03. [Boolean](./Boolean) - Логические выражения 
 
-04. 
+04. [If](./If) - Условный оператор 
 
 05. 
 
