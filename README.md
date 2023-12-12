@@ -28,7 +28,7 @@ Each solution file contains the text of the problem.
 
 04. [If](./If) - Условный оператор 
 
-05. 
+05. [Case](./Case) - Оператор выбора 
 
 06. 
 
