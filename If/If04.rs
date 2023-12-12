@@ -42,7 +42,7 @@ fn string_to_number(some_string: String) -> i32 {
     some_number 
 } 
 
-// Функция проверки чётности 
+// Функция проверки положительности  
 fn even_number(some_number: i32) -> i32 { 
     if some_number > 0 { 
         return 1; 
