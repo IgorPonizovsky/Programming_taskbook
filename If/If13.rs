@@ -20,10 +20,14 @@ fn main() {
     // Вывод искомых значений: 
     if ( a < b && b < c ) | ( a > b && b > c ) { 
         println!("Среднее: {}", b); 
-    } else if ( a < c && c < b ) | ( a > c && c > b ) { 
+    } else 
+    if ( a < c && c < b ) | ( a > c && c > b ) { 
         println!("Среднее: {}", c); 
-    } else { 
+    } else 
+    if ( b < a && a < c ) | ( b > a && a > c ) { 
         println!("Среднее: {}", a); 
+    } else { 
+        println!("Есть повторяющиеся числа"); 
     }; 
 } 
 
